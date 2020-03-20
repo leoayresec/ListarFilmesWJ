@@ -5,13 +5,13 @@ import {
     Text,
 } from 'react-native';
 import { SocialIcon, Icon,Avatar } from 'react-native-elements';
-
+import {Title}from './styles'
 export default class Login extends React.PureComponent {
 
     render() {
         return (
-            <View style={{ flex: 1 }}>
-                <View style={{ flex: 0.4, alignItems: 'center', justifyContent: 'center' }}>
+            <View style={{ flex: 1, backgroundColor:'#3E6A82' }}>
+                <View style={{ flex: 0.4, alignItems: 'center', justifyContent: 'center'}}>
                     <Avatar
                         rounded
                         size='xlarge'
@@ -20,9 +20,9 @@ export default class Login extends React.PureComponent {
                                 'https://images.squarespace-cdn.com/content/v1/546bda42e4b02689ea84e659/1434908135361-GF5OZKCX107Q6XNSVZAS/ke17ZwdGBToddI8pDm48kNiEM88mrzHRsd1mQ3bxVct7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0topjEaZcWjtmMYdCWL4dkGbxs35J-ZjFa9s1e3LsxrX8g4qcOj2k2AL08mW_Htcgg/vietnamwarfilm',
                         }}
                     />
-                    <Text style={{fontSize:20}}>Lista de Filmes</Text>
+                    <Title>Lista de Filmes</Title>
                 </View>
-                <View style={{ flex: 0.6, borderWidth: 1, borderTopStartRadius: 30, borderTopEndRadius: 30, borderColor: 'gray' }}>
+                <View style={{ flex: 0.6, borderTopStartRadius: 30, borderTopEndRadius: 30, backgroundColor: '#769CAB' }}>
                     <SocialIcon
                         title='Entrar com Facebook'
                         button
